@@ -6,48 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />       
 </head>
 
 <body>
-  <header class="bg-[url('assets/images/png/header-bg.png')] bg-cover bg-no-repeat bg-center lg:min-h-[810px] min-h-[1250px]">
+  <header class="bg-[url('assets/images/png/header-bg.png')] bg-cover bg-no-repeat bg-center min-h-[810px] ">
     <nav>
       <div class="container mx-auto flex justify-between items-center p-5">
         <div class="">
-          <img src="assets/images/png/logo.png" alt="">
+          <a href="#"><img class="pointer-events-none" src="assets/images/png/logo.svg" alt=""></a>
         </div>
         <ul type="none" id="menu"
           class="transition-all flex gap-[32px] max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:w-full max-lg:min-h-screen max-lg:justify-center max-lg:flex-col max-lg:bg-black max-lg:z-[2] justify-center items-center">
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">About</li>
           </a>
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">How It Works</li>
           </a>
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">Services</li>
           </a>
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">Testimonials</li>
           </a>
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">Why Us</li>
           </a>
-          <a href="">
+          <a href="#">
             <li class="text-[16px] text-white font-normal ">FAQ</li>
           </a>
           <button
-            class="sm:hidden flex  bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 text-[16px] font-bold text-[#00171F]">Get
-            Started<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
+            class="transition-all cursor-pointer group hover:bg-[#00171F] hover:text-white sm:hidden flex  bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 text-[16px] font-bold text-[#00171F]">Get
+            Started<svg class="group-hover:stroke-white" width="15" height="16" viewBox="0 0 15 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="group-hover:stroke-white transition-all"
+                d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
         </ul>
         <div class="flex gap-8 justify-center items-center">
           <button
-            class="bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] sm:flex hidden justify-center items-center gap-1 text-[16px] font-bold text-[#00171F]">Get
+            class="transition-all hover:bg-[#00171F] group hover:text-white cursor-pointer bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] sm:flex hidden justify-center items-center gap-1 text-[16px] font-bold text-[#00171F]">Get
             Started<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
+              <path class="group-hover:stroke-white transition-all"
+                d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
@@ -64,27 +70,67 @@
     <div class="container px-4 mx-auto mt-[53px]">
       <div class="flex gap-y-8 flex-wrap -mx-3">
         <div class="lg:w-1/2 w-full px-3">
-          <h1 class="text-[64px] text-white font-bold"><samp class="font-normal">Easily Compare</samp> Energy, Gas, and Internet <span class="font-normal">Plans</span></h1>
-          <p class="text-white text-[16px] font-normal">Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search,
+          <h1 class="text-[64px] text-white font-bold"><samp class="font-normal">Easily Compare</samp> Energy, Gas, and
+            Internet <span class="font-normal">Plans</span></h1>
+          <p class="text-white text-[16px] font-normal">Find and switch to the best energy, gas, and internet plans with
+            ease. Our platform simplifies your search,
             letting you
             compare providers and make informed decisions, all in one place.</p>
-          <div class="flex justify-between mt-5  bg-white sm:py-[9px] max-w-[476px] pr-[9px] pl-[22px] rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px] items-center text-[16px] font-bold text-white sm:flex-row flex-col gap-y-5 py-5">
-            <input type="text" placeholder="Start typing your address" class="text-[#00171F] text-[16px] font-normal outline-none bg-transparent max-sm:w-full text-center" />
+          <div
+            class="flex justify-between mt-5  bg-white sm:py-[9px] max-w-[476px] pr-[9px] pl-[22px] rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px] items-center text-[16px] font-bold text-white sm:flex-row flex-col gap-y-5 py-5">
+            <input type="text" placeholder="Start typing your address"
+              class="text-[#00171F] text-[16px] font-normal outline-none bg-transparent max-sm:w-full text-center" />
             <button
-              class="flex bg-[#00A8E8] py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 text-[16px] font-bold text-white">Compare<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#ffffff" stroke-width="1.93338"
+              class="transition-all hover:bg-white group hover:text-[#00A8E8] cursor-pointer border-[#00A8E8] border-solid border-[2px] flex bg-[#00A8E8] py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 text-[16px] font-bold text-white">Compare<svg
+                width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="group-hover:stroke-[#00A8E8] transition-all"
+                  d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#ffffff" stroke-width="1.93338"
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
           </div>
         </div>
         <div class="lg:w-1/2 w-full relative">
-          <img class="absolute top-0 right-0" src="assets/images/png/header-img.png" alt="">
+          <img class="xl:absolute top-0 right-0 pointer-events-none" src="assets/images/png/header-img.png" alt="">
         </div>
       </div>
     </div>
   </header>
+  <section>
+    <div>
+      <div class="container p-5 mx-auto">
+        <div class="flex flex-wrap -mx-3">
+          <div class="xl:w-1/2 w-full px-4 ">
+            <h1 class="text-[#003459] text-[38px]">
+              More than <span class="text-[#00A8E8] font-bold">80,000</span>+ companies trust bill central
+            </h1>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-between -mx-3 mt-[64px] autoplay">
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-1.png" class="pointer-events-none" alt=""></a>
+          </div>
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-2.png" class="pointer-events-none" alt=""></a>
+          </div>
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-3.png" class="pointer-events-none" alt=""></a>
+          </div>
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-4.png" class="pointer-events-none" alt=""></a>
+          </div>
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-5.png" class="pointer-events-none" alt=""></a>
+          </div>
+          <div class="w-[14%] flex justify-center items-center">
+            <a href="#"><img src="assets/images/png/section-1-img-6.png" class="pointer-events-none" alt=""></a>
+          </div>
+        </div>
+      </div>
+  </section>
   <script src="assets/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
