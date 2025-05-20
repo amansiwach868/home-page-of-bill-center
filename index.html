@@ -2,16 +2,35 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link type="text/tailwindcss" rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <header class="bg-[url('assets/images/png/header-bg.png')] bg-cover bg-no-repeat bg-center">
     <nav>
-        
-    </nav>>
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div class="">
+          <img src="assets/images/png/logo.png" alt="">
+        </div>
+        <ul type="none" class=" flex gap-6">
+          <li class="text-[16px] text-white font-normal ">About</li>
+          <li class="text-[16px] text-white font-normal ">How It Works</li>
+          <li class="text-[16px] text-white font-normal ">Services</li>
+          <li class="text-[16px] text-white font-normal ">Testimonials</li>
+          <li class="text-[16px] text-white font-normal ">Why Us</li>
+          <li class="text-[16px] text-white font-normal ">FAQ</li>
+        </ul>
+        <button class="bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] flex justify-center items-center gap-1 text-[16px] font-bold text-[#00171F]">Get Started<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>            
+        </button>
+      </div>
+    </nav>
+  </header>
 </body>
 
 </html>
