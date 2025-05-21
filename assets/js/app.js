@@ -52,20 +52,16 @@ $('.slider').slick({
     nextArrow:".right", 
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 1020,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 2
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 640,
             settings: {
-                arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '0',
                 slidesToShow: 1
             }
         }
