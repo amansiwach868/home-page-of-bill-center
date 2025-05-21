@@ -44,4 +44,31 @@ document.getElementById("section-4-dropdown-4").addEventListener("click", functi
     document.getElementById("remove-py-14-4").classList.toggle("py-[14px]");
     document.getElementById("change-svg-color-4").classList.toggle("color");
 });
+$('.slider').slick({
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: ".left",
+    nextArrow:".right", 
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
 
