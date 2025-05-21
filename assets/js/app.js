@@ -49,7 +49,7 @@ $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: ".left",
-    nextArrow:".right", 
+    nextArrow: ".right",
     responsive: [
         {
             breakpoint: 1020,
@@ -66,5 +66,37 @@ $('.slider').slick({
             }
         }
     ]
+});
+document.getElementById("section-8-dropdown-1").addEventListener("click", function () {
+    document.getElementById("section-8-dropdown-1").classList.toggle("h-[76px]");
+    document.getElementById("section-8-dropdown-1").classList.toggle("bg-[#003459]");
+    document.getElementById("section-8-dropdown-1").classList.toggle("text-white");
+    document.getElementById("rotate-svg-1-section-8").classList.toggle("color-1");
+    document.getElementById("rotate-svg-1-section-8").classList.toggle("rotate-90");
+    document.getElementById("hidden-1").classList.toggle("hidden");
+});
+document.getElementById("section-8-dropdown-2").addEventListener("click", function () {
+    document.getElementById("section-8-dropdown-2").classList.toggle("h-[76px]");
+    document.getElementById("section-8-dropdown-2").classList.toggle("bg-[#003459]");
+    document.getElementById("section-8-dropdown-2").classList.toggle("text-white");
+    document.getElementById("rotate-svg-2-section-8").classList.toggle("color-1");
+    document.getElementById("rotate-svg-2-section-8").classList.toggle("rotate-90");
+    document.getElementById("hidden-2").classList.toggle("hidden");
+});
+document.getElementById("section-8-dropdown-3").addEventListener("click", function () {
+    document.getElementById("section-8-dropdown-3").classList.toggle("h-[76px]");
+    document.getElementById("section-8-dropdown-3").classList.toggle("bg-[#003459]");
+    document.getElementById("section-8-dropdown-3").classList.toggle("text-white");
+    document.getElementById("rotate-svg-3-section-8").classList.toggle("color-1");
+    document.getElementById("rotate-svg-3-section-8").classList.toggle("rotate-90");
+    document.getElementById("hidden-3").classList.toggle("hidden");
+});
+document.getElementById("section-8-dropdown-4").addEventListener("click", function () {
+    document.getElementById("section-8-dropdown-4").classList.toggle("h-[76px]");
+    document.getElementById("section-8-dropdown-4").classList.toggle("bg-[#003459]");
+    document.getElementById("section-8-dropdown-4").classList.toggle("text-white");
+    document.getElementById("rotate-svg-4-section-8").classList.toggle("color-1");
+    document.getElementById("rotate-svg-4-section-8").classList.toggle("rotate-90");
+    document.getElementById("hidden-4").classList.toggle("hidden");
 });
 

@@ -1,36 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     font-family: "Poppins", sans-serif;
- }
- .show {
-     right: 0 !important;
-     box-sizing: border-box;
- }
+}
 
- .activeNavBar {
-     transform-origin: left;
-     transform: rotate(-40deg);
- }
+.show {
+    right: 0 !important;
+    box-sizing: border-box;
+}
 
- .activeNavBar3 {
-     margin-left: -30px;
-     opacity: 0;
-     pointer-events: none;
- }
+.activeNavBar {
+    transform-origin: left;
+    transform: rotate(-40deg);
+}
 
- .activeNavBar2 {
-     transform-origin: left;
-     transform: rotate(40deg);
- }
- .color rect {
+.activeNavBar3 {
+    margin-left: -30px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.activeNavBar2 {
+    transform-origin: left;
+    transform: rotate(40deg);
+}
+
+.color rect {
     fill: #003459;
- }
- .color g path {
+}
+
+.color g path {
     fill: white;
- }
- .color g path {
+}
+
+.color g path {
     transition: all 0.3s linear;
- }
- .box-shadow{
+}
+
+.box-shadow {
     box-shadow: 0px 0px 13.9px 0px #0000001A;
- }
+}
+
+.color-1 circle {
+    stroke: white;
+}
+.color-1 rect {
+    stroke: white;
+    fill: white;
+}
