@@ -1,4 +1,5 @@
 document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("nav").classList.toggle("fixed");
     document.getElementById("menu").classList.toggle("show");
     document.getElementById("span-1").classList.toggle("activeNavBar2");
     document.getElementById("span-2").classList.toggle("activeNavBar3");
