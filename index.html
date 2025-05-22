@@ -5,48 +5,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
-  <header class="bg-[url('assets/images/png/header-bg.png')] bg-cover bg-no-repeat bg-center min-h-[810px] ">
+  <header class="bg-[url('assets/images/png/header-bg.png')] bg-cover bg-no-repeat bg-center min-h-[810px]">
     <nav>
       <div class="container mx-auto flex justify-between items-center p-5">
-        <div class="">
-          <a href="#"><img class="pointer-events-none" src="assets/images/png/logo.svg" alt=""></a>
+        <div>
+          <a href="#"><img class="pointer-events-none" src="assets/images/png/logo.svg" alt="">img</a>
         </div>
-        <ul type="none" id="menu"
+        <ul id="menu"
           class="transition-all flex gap-[32px] max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:w-full max-lg:min-h-screen max-lg:justify-center max-lg:flex-col max-lg:bg-black max-lg:z-[2] justify-center items-center">
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">About</li>
-          </a>
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">How It Works</li>
-          </a>
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Services</li>
-          </a>
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Testimonials</li>
-          </a>
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Why Us</li>
-          </a>
-          <a href="#">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">FAQ</li>
-          </a>
-          <button
-            class="transition-all cursor-pointer group hover:bg-[#00171F] hover:text-white sm:hidden flex  bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] font-bold text-[#00171F]">Get
-            Started<svg class="group-hover:stroke-white" width="15" height="16" viewBox="0 0 15 16" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path class="group-hover:stroke-white transition-all"
-                d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
+          <li>
+            <a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">About</a>
+          </li>
+          <li>
+            <a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">How It
+              Works</a>
+          </li>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Services</a></li>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Testimonials</a>
+          </li>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">Why
+              Us</a></li>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white font-normal ">FAQ</a>
+          </li>
+          <li>
+            <button
+              class="transition-all cursor-pointer group hover:bg-[#00171F] hover:text-white sm:hidden flex  bg-white py-3 px-5 rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] justify-center items-center gap-1 lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] font-bold text-[#00171F]">Get
+              Started<svg class="group-hover:stroke-white" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="group-hover:stroke-white transition-all"
+                  d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </li>
         </ul>
         <div class="flex gap-8 justify-center items-center">
           <button
@@ -57,9 +57,8 @@
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <label id="menu-toggle"
-            class="w-7 h-[20px] sm:h-[30px] lg:hidden flex flex-col justify-center items-center gap-[5px] relative z-50"
-            for="menu-toggle">
+          <label id="menuToggle"
+            class="w-7 h-[20px] sm:h-[30px] lg:hidden flex flex-col justify-center items-center gap-[5px] relative z-50">
             <span id="span-1" class="sm:h-[5px] sm:w-8 w-[26px] h-1 bg-white rounded-full transition-all"></span>
             <span id="span-2" class="sm:h-[5px] sm:w-8 w-[26px] h-1 bg-white rounded-full"></span>
             <span id="span-3" class="sm:h-[5px] sm:w-8 w-[26px] h-1 bg-white rounded-full transition-all"></span>
@@ -99,39 +98,38 @@
     </div>
   </header>
   <section>
-    <div>
-      <div class="container p-5 mx-auto">
-        <div class="flex flex-wrap -mx-3">
-          <div class="xl:w-1/2 w-full px-4 ">
-            <h1 class="text-[#003459] lg:text-[38px] md:text-[33px] sm:text-[28px] text-[25px]">
-              More than <span class="text-[#00A8E8] font-bold">80,000</span>+ companies trust bill central
-            </h1>
-          </div>
-        </div>
-        <div class="flex flex-wrap justify-center gap-y-10 -mx-3 mt-[64px] autoplay">
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-1.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-2.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-3.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-4.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-5.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-6.png" class="pointer-events-none" alt=""></a>
-          </div>
-          <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
-            <a href="#"><img src="assets/images/png/section-1-img-7.png" class="pointer-events-none" alt=""></a>
-          </div>
+    <div class="container p-5 mx-auto">
+      <div class="flex flex-wrap -mx-3">
+        <div class="xl:w-1/2 w-full px-4 ">
+          <h3 class="text-[#003459] lg:text-[38px] md:text-[33px] sm:text-[28px] text-[25px]">
+            More than <span class="text-[#00A8E8] font-bold">80,000</span>+ companies trust bill central
+          </h3>
         </div>
       </div>
+      <div class="flex flex-wrap justify-center gap-y-10 -mx-3 mt-[64px] autoplay">
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-1.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-2.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-3.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-4.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-5.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-6.png" class="pointer-events-none" alt="">img</a>
+        </div>
+        <div class="lg:w-[14%] md:w-1/3 w-1/2 flex justify-center items-center">
+          <a href="#"><img src="assets/images/png/section-1-img-7.png" class="pointer-events-none" alt="">img</a>
+        </div>
+      </div>
+    </div>
   </section>
   <section>
     <div class="container mx-auto px-5 sm:mt-[160px] mt-[70px]">
@@ -140,10 +138,10 @@
           <img class="w-full" src="assets/images/png/section-3-img.png" alt="">
         </div>
         <div class="lg:w-1/2 w-full px-4">
-          <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] font-bold text-[#00171F]">Switching Energy
+          <h2 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] font-bold text-[#00171F]">Switching Energy
             <br> <span class="font-normal">Made
               Simple</span>
-          </h1>
+          </h2>
           <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#00171F] font-normal">Say goodbye to
             confusing energy plans! We simplify the
             process by providing clear and competitive electricity and gas
@@ -153,7 +151,7 @@
           <div class="mt-[38px]">
             <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] text-[#003459]">Benefits of Comparing
               Energy Plans</h3>
-            <ul type="circle" class="list-disc pl-6 mt-5 flex flex-col gap-y-2">
+            <ul class="list-disc pl-6 mt-5 flex flex-col gap-y-2">
               <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">Save money by finding cheaper deals.
               </li>
               <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">Get better customer service.</li>
@@ -175,8 +173,8 @@
   </section>
   <section class="sm:py-[162px] py-[70px]">
     <div class="container mx-auto px-4">
-      <h1 class="text-center lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px]">Simple Steps to <span
-          class="font-bold">Switch</span></h1>
+      <h2 class="text-center lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px]">Simple Steps to <span
+          class="font-bold">Switch</span></h2>
       <p
         class="mx-auto mt-4 mb-12 text-center max-w-[610px] w-full lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#4B4B4B]">
         Lorem ipsum dolor sit
@@ -192,8 +190,8 @@
             1. Enter Your Location and Preferences</p>
         </div>
         <div class=" bg-[#003459] p-8 absolute -bottom-full group-hover:bottom-0 transition-all">
-          <h1 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">1. Enter Your Location and
-            Preferences</h1>
+          <h3 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">1. Enter Your Location and
+            Preferences</h3>
           <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#E5EAEE] mt-[14px]">Complete the
             process in just a few clicks. We’ll handle the
             rest and ensure a smooth transition to your new provider.</p>
@@ -208,8 +206,8 @@
             2. Compare Providers</p>
         </div>
         <div class=" bg-[#003459] p-8 absolute -bottom-full group-hover:bottom-0 transition-all">
-          <h1 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">2. Compare Providers</h1>
-          <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#E5EAEE] mt-[14px]">Complete the
+          <h3 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">2. Compare Providers</h3>
+          <p class="lg:text-[16px] md:text-[=12px] sm:text-[9px] text-[9px] text-[#E5EAEE] mt-[14px]">Complete the
             process in just a few clicks. We’ll handle the
             rest and ensure a smooth transition to your new provider.</p>
         </div>
@@ -223,7 +221,7 @@
             3. Switch Easily</p>
         </div>
         <div class=" bg-[#003459] p-8 absolute -bottom-full group-hover:bottom-0 transition-all">
-          <h1 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">3. Switch Easily</h1>
+          <h3 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">3. Switch Easily</h3>
           <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#E5EAEE] mt-[14px]">Complete the
             process in just a few clicks. We’ll handle the
             rest and ensure a smooth transition to your new provider.</p>
@@ -238,7 +236,7 @@
             4. Choose the Best Plan</p>
         </div>
         <div class=" bg-[#003459] p-8 absolute -bottom-full group-hover:bottom-0 transition-all">
-          <h1 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">4. Choose the Best Plan</h1>
+          <h3 class="lg:text-[32px] md:text-[28px] sm:text-[24px] text-[20px] text-white">4. Choose the Best Plan</h3>
           <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-[#E5EAEE] mt-[14px]">Complete the
             process in just a few clicks. We’ll handle the
             rest and ensure a smooth transition to your new provider.</p>
@@ -250,8 +248,8 @@
     <div class="container mx-auto px-4">
       <div class="flex gap-y-10 flex-wrap mx-4 justify-center items-center">
         <div class="xl:w-1/2 w-full px-3 xl:pr-9">
-          <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px]">Comprehensive <br>Utility <span
-              class="font-bold">Comparisons</span></h1>
+          <h3 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px]">Comprehensive <br>Utility <span
+              class="font-bold">Comparisons</span></h3>
           <div class=" flex flex-col gap-[24px] mt-[60px]">
             <div id="section-4-dropdown-1"
               class="flex justify-between items-start border overflow-hidden border-[#00000014] border-solid rounded-[4px] p-[14px] h-[92px]">
@@ -313,7 +311,6 @@
                     </clipPath>
                   </defs>
                 </svg>
-
                 <div id="remove-gap-10-2" class=" flex flex-col gap-10">
                   <h4 id="remove-py-14-2" class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] py-[14px]">Gas
                     Plan Comparisons</h4>
@@ -347,7 +344,6 @@
                     </clipPath>
                   </defs>
                 </svg>
-
                 <div id="remove-gap-10-3" class=" flex flex-col gap-10">
                   <h4 id="remove-py-14-3" class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] py-[14px]">
                     Internet Plan Comparisons</h4>
@@ -379,7 +375,6 @@
                       fill="#007EA7" />
                   </g>
                 </svg>
-
                 <div id="remove-gap-10-4" class=" flex flex-col gap-10">
                   <h4 id="remove-py-14-4" class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] py-[14px]">
                     Bundle Packages</h4>
@@ -406,8 +401,8 @@
   </section>
   <section class="sm:py-[162px] py-[70px]">
     <div class="container mx-auto px-4">
-      <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center ">Why Choose Us for <span
-          class="font-bold">Utilities</span></h1>
+      <h3 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center ">Why Choose Us for <span
+          class="font-bold">Utilities</span></h3>
       <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-center max-w-[500px] w-full mx-auto mt-4">
         Lorem ipsum dolor sit amet consectetur.
         Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
@@ -440,8 +435,8 @@
               <div
                 class="min-h-[286px] p-[24px] border border-[#00171F1A] border-opacity-10 rounded-[4px] shadow-[0px_0px_13.9px_0px_#0000001A]">
                 <img src="assets/images/svg/section-6-img-2" alt="">
-                <h1 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">
-                  Simplified Comparison Process</h1>
+                <h3 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">
+                  Simplified Comparison Process</h3>
                 <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">Our intuitive platform lets you
                   compare the best utility providers in one place,
                   helping you make a
@@ -453,8 +448,8 @@
               <div
                 class="min-h-[286px] p-[24px] border border-[#00171F1A] border-opacity-10 rounded-[4px] shadow-[0px_0px_13.9px_0px_#0000001A]">
                 <img src="assets/images/svg/section-6-img-3" alt="">
-                <h1 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">Save
-                  Time and Money</h1>
+                <h3 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">Save
+                  Time and Money</h3>
                 <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">With up-to-date plans and pricing, you
                   can be sure you’re getting the most
                   competitive rates available.</p>
@@ -466,8 +461,8 @@
               <div
                 class=" min-h-[286px] p-[24px] border border-[#00171F1A] border-opacity-10 rounded-[4px] shadow-[0px_0px_13.9px_0px_#0000001A]">
                 <img src="assets/images/svg/section-6-img-4" alt="">
-                <h1 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">No
-                  Service Interruptions</h1>
+                <h3 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">No
+                  Service Interruptions</h3>
                 <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">We take care of the entire switching
                   process so you can enjoy a hassle-free
                   experience with zero downtime.</p>
@@ -477,8 +472,8 @@
               <div
                 class="min-h-[286px] p-[24px] border border-[#00171F1A] border-opacity-10 rounded-[4px] shadow-[0px_0px_13.9px_0px_#0000001A]">
                 <img src="assets/images/svg/section-6-img-5" alt="">
-                <h1 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">
-                  Comprehensive Support</h1>
+                <h3 class="leading-[1] lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px] mt-[18px] mb-3">
+                  Comprehensive Support</h3>
                 <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">Whether you need assistance selecting
                   a plan or during the switch, our dedicated
                   support team is here to help every step
@@ -492,8 +487,8 @@
   </section>
   <section class="min-h-[435px]">
     <div class="container mx-auto px-3 flex justify-center items-center flex-col">
-      <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center ">Our <span
-          class="font-bold">Testimonials</span></h1>
+      <h3 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center ">Our <span
+          class="font-bold">Testimonials</span></h3>
       <p class="max-w-[500px] text-center lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] mx-auto ">Lorem ipsum
         dolor sit amet consectetur. Semper vitae
         nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
@@ -503,7 +498,7 @@
           <div class="flex items-center gap-2">
             <img src="assets/images/png/section-7-card-img-1.png" alt="">
             <div>
-              <h1 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h1>
+              <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h3>
               <span class="text-[#808080] lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">@cameron</span>
             </div>
           </div>
@@ -518,7 +513,7 @@
           <div class="flex items-center gap-2">
             <img src="assets/images/png/section-7-card-img-1.png" alt="">
             <div>
-              <h1 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h1>
+              <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h3>
               <span class="text-[#808080] lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">@cameron</span>
             </div>
           </div>
@@ -533,7 +528,7 @@
           <div class="flex items-center gap-2">
             <img src="assets/images/png/section-7-card-img-1.png" alt="">
             <div>
-              <h1 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h1>
+              <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Cameron</h3>
               <span class="text-[#808080] lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">@cameron</span>
             </div>
           </div>
@@ -548,7 +543,7 @@
           <div class="flex items-center gap-2">
             <img src="assets/images/png/section-7-card-img-2.png" alt="">
             <div>
-              <h1 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Ronald</h1>
+              <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Ronald</h3>
               <span class="text-[#808080] lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">@ronald</span>
             </div>
           </div>
@@ -563,7 +558,7 @@
           <div class="flex items-center gap-2">
             <img src="assets/images/png/section-7-card-img-3.png" alt="">
             <div>
-              <h1 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Jay Shah</h1>
+              <h3 class="lg:text-[24px] md:text-[20px] sm:text-[17px] text-[13px]">Jay Shah</h3>
               <span class="text-[#808080] lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px]">@jayshah</span>
             </div>
           </div>
@@ -590,14 +585,12 @@
           </svg>
         </button>
       </div>
-
-    </div>
     </div>
   </section>
   <section class="sm:py-[162px] py-[70px]">
     <div class="container mx-auto px-4 flex flex-col justify-center items-center">
-      <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center">Frequently Asked <span
-          class="font-bold">Questions</span></h1>
+      <h3 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center">Frequently Asked <span
+          class="font-bold">Questions</span></h3>
       <p
         class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-center text-opacity-90 max-w-[560px] w-full mx-auto mt-4">
         Lorem ipsum dolor sit amet
@@ -685,13 +678,12 @@
         </div>
       </div>
     </div>
-
   </section>
   <section class="sm:translate-y-[50%]">
     <div
       class="container mx-auto p-4 bg-[url('assets/images/png/section-9-bg-img.png')] bg-cover bg-center bg-no-repeat min-h-[330px] flex flex-col justify-center items-center">
-      <h1 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center">Join Our <span
-          class="font-bold">Newsletter</span></h1>
+      <h3 class="lg:text-[48px] md:text-[42px] sm:text-[38px] text-[32px] text-center">Join Our <span
+          class="font-bold">Newsletter</span></h3>
       <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] max-w-[660px] w-full mx-auto text-center">Stay up
         to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never
         miss out on great savings opportunities again.</p>
@@ -715,53 +707,41 @@
     <div
       class="container mx-auto p-4 sm:translate-y-[232px] flex sm:justify-between gap-8 sm:flex-row flex-col justify-center items-center ">
       <div class="max-w-[300px]">
-        <a href=""><img src="assets/images/svg/footer-logo.svg" alt=""></a>
+        <a href="#"><img src="assets/images/svg/footer-logo.svg" alt="">img</a>
         <p class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-[28px]">Ut auctor nisi
           mauris eu tincidunt facilisi. Diam amet sollicitudin pretium maecenas ornare lacus arcu adipiscing.</p>
         <div class="mt-[36px]">
-          <h1 class="text-[20px] font-bold text-white ">Follow Us</h1>
+          <h3 class="text-[20px] font-bold text-white ">Follow Us</h3>
           <div class="flex gap-4 mt-4">
-            <a href=""><img src="assets/images/svg/social-icon-1.svg" alt=""></a>
-            <a href=""><img src="assets/images/svg/social-icon-2.svg" alt=""></a>
-            <a href=""><img src="assets/images/svg/social-icon-3.svg" alt=""></a>
-            <a href=""><img src="assets/images/svg/social-icon-4.svg" alt=""></a>
+            <a href="#"><img src="assets/images/svg/social-icon-1.svg" alt="">img</a>
+            <a href="#"><img src="assets/images/svg/social-icon-2.svg" alt="">img</a>
+            <a href="#"><img src="assets/images/svg/social-icon-3.svg" alt="">img</a>
+            <a href="#"><img src="assets/images/svg/social-icon-4.svg" alt="">img</a>
           </div>
         </div>
       </div>
       <div class="sm:max-w-[320px] max-w-[500px] w-full flex justify-between ">
         <ul class="flex flex-col gap-y-3">
           <li class="text-[20px] font-bold text-white">Quick Link</li>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">About</li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">How It Works
-            </li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Services</li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Testimonials
-            </li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Why Us</li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">FAQ</li>
-          </a>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">About</a></li>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">How
+              It Works</a></li>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Services</a>
+          </li>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Testimonials</a>
+          </li>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Why
+              Us</a></li>
+          <li><a href="#"
+              class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">FAQ</a></li>
         </ul>
         <ul class="flex flex-col  gap-y-3">
           <li class="text-[20px] font-bold text-white">Services</li>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Privacy Policy
-            </li>
-          </a>
-          <a href="">
-            <li class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Terms of
-              Services</li>
-          </a>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Privacy Policy</a></li>
+          <li><a href="#" class="lg:text-[16px] md:text-[12px] sm:text-[9px] text-[9px] text-white opacity-90 mt-2">Services</a></li>
         </ul>
       </div>
     </div>
