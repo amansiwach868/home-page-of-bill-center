@@ -44,7 +44,14 @@
 .color-1 circle {
     stroke: white;
 }
+
 .color-1 rect {
     stroke: white;
     fill: white;
+}
+
+.slick-track {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

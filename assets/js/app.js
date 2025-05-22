@@ -4,45 +4,62 @@ document.getElementById("menuToggle").addEventListener("click", function () {
     document.getElementById("span-2").classList.toggle("activeNavBar3");
     document.getElementById("span-3").classList.toggle("activeNavBar");
 });
-document.getElementById("section-4-dropdown-1").addEventListener("click", function () {
-    document.getElementById("section-4-dropdown-1").classList.toggle("h-[92px]");
-    document.getElementById("section-4-dropdown-1").classList.toggle("box-shadow");
-    document.getElementById("rotate-svg-1-section-4").classList.toggle("rotate-180");
-    document.getElementById("rotate-svg-1-section-4").classList.toggle("my-auto");
-    document.getElementById("rotate-svg-1-section-4").classList.toggle("translate-y-[15px]");
-    document.getElementById("remove-gap-10-1").classList.toggle("gap-10");
-    document.getElementById("remove-py-14-1").classList.toggle("py-[14px]");
-    document.getElementById("change-svg-color-1").classList.toggle("color");
+
+$('.autoplay').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [
+        {
+            breakpoint: 1020,
+            settings: {
+                slidesToShow: 5
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
-document.getElementById("section-4-dropdown-2").addEventListener("click", function () {
-    document.getElementById("section-4-dropdown-2").classList.toggle("h-[92px]");
-    document.getElementById("section-4-dropdown-2").classList.toggle("box-shadow");
-    document.getElementById("rotate-svg-2-section-4").classList.toggle("rotate-180");
-    document.getElementById("rotate-svg-2-section-4").classList.toggle("my-auto");
-    document.getElementById("rotate-svg-2-section-4").classList.toggle("translate-y-[15px]");
-    document.getElementById("remove-gap-10-2").classList.toggle("gap-10");
-    document.getElementById("remove-py-14-2").classList.toggle("py-[14px]");
-    document.getElementById("change-svg-color-2").classList.toggle("color");
-});
-document.getElementById("section-4-dropdown-3").addEventListener("click", function () {
-    document.getElementById("section-4-dropdown-3").classList.toggle("h-[92px]");
-    document.getElementById("section-4-dropdown-3").classList.toggle("box-shadow");
-    document.getElementById("rotate-svg-3-section-4").classList.toggle("rotate-180");
-    document.getElementById("rotate-svg-3-section-4").classList.toggle("my-auto");
-    document.getElementById("rotate-svg-3-section-4").classList.toggle("translate-y-[15px]");
-    document.getElementById("remove-gap-10-3").classList.toggle("gap-10");
-    document.getElementById("remove-py-14-3").classList.toggle("py-[14px]");
-    document.getElementById("change-svg-color-3").classList.toggle("color");
-});
-document.getElementById("section-4-dropdown-4").addEventListener("click", function () {
-    document.getElementById("section-4-dropdown-4").classList.toggle("h-[92px]");
-    document.getElementById("section-4-dropdown-4").classList.toggle("box-shadow");
-    document.getElementById("rotate-svg-4-section-4").classList.toggle("rotate-180");
-    document.getElementById("rotate-svg-4-section-4").classList.toggle("my-auto");
-    document.getElementById("rotate-svg-4-section-4").classList.toggle("translate-y-[15px]");
-    document.getElementById("remove-gap-10-4").classList.toggle("gap-10");
-    document.getElementById("remove-py-14-4").classList.toggle("py-[14px]");
-    document.getElementById("change-svg-color-4").classList.toggle("color");
+function toggleDropdown(index) {
+    const dropdown = document.getElementById(`section-4-dropdown-${index}`);
+    const svg = document.getElementById(`rotate-svg-${index}-section-4`);
+    const gap = document.getElementById(`remove-gap-10-${index}`);
+    const py = document.getElementById(`remove-py-14-${index}`);
+    const svgColor = document.getElementById(`change-svg-color-${index}`);
+
+    dropdown.classList.toggle("h-[92px]");
+    dropdown.classList.toggle("box-shadow");
+
+    svg.classList.toggle("rotate-180");
+    svg.classList.toggle("my-auto");
+    svg.classList.toggle("translate-y-[15px]");
+
+    gap.classList.toggle("gap-10");
+    py.classList.toggle("py-[14px]");
+    svgColor.classList.toggle("color");
+}
+
+[1, 2, 3, 4].forEach(index => {
+    document.getElementById(`section-4-dropdown-${index}`).addEventListener("click", () => toggleDropdown(index));
 });
 $('.slider').slick({
     slidesToShow: 3,
@@ -67,36 +84,25 @@ $('.slider').slick({
         }
     ]
 });
-document.getElementById("section-8-dropdown-1").addEventListener("click", function () {
-    document.getElementById("section-8-dropdown-1").classList.toggle("h-[76px]");
-    document.getElementById("section-8-dropdown-1").classList.toggle("bg-[#003459]");
-    document.getElementById("section-8-dropdown-1").classList.toggle("text-white");
-    document.getElementById("rotate-svg-1-section-8").classList.toggle("color-1");
-    document.getElementById("rotate-svg-1-section-8").classList.toggle("rotate-90");
-    document.getElementById("hidden-1").classList.toggle("hidden");
+function toggleSection8Dropdown(index) {
+    const dropdown = document.getElementById(`section-8-dropdown-${index}`);
+    const svg = document.getElementById(`rotate-svg-${index}-section-8`);
+    const hiddenContent = document.getElementById(`hidden-${index}`);
+
+    dropdown.classList.toggle("h-[76px]");
+    dropdown.classList.toggle("bg-[#003459]");
+    dropdown.classList.toggle("text-white");
+
+    svg.classList.toggle("color-1");
+    svg.classList.toggle("rotate-90");
+
+    hiddenContent.classList.toggle("hidden");
+}
+
+[1, 2, 3, 4].forEach(index => {
+    document.getElementById(`section-8-dropdown-${index}`).addEventListener("click", () => toggleSection8Dropdown(index));
 });
-document.getElementById("section-8-dropdown-2").addEventListener("click", function () {
-    document.getElementById("section-8-dropdown-2").classList.toggle("h-[76px]");
-    document.getElementById("section-8-dropdown-2").classList.toggle("bg-[#003459]");
-    document.getElementById("section-8-dropdown-2").classList.toggle("text-white");
-    document.getElementById("rotate-svg-2-section-8").classList.toggle("color-1");
-    document.getElementById("rotate-svg-2-section-8").classList.toggle("rotate-90");
-    document.getElementById("hidden-2").classList.toggle("hidden");
-});
-document.getElementById("section-8-dropdown-3").addEventListener("click", function () {
-    document.getElementById("section-8-dropdown-3").classList.toggle("h-[76px]");
-    document.getElementById("section-8-dropdown-3").classList.toggle("bg-[#003459]");
-    document.getElementById("section-8-dropdown-3").classList.toggle("text-white");
-    document.getElementById("rotate-svg-3-section-8").classList.toggle("color-1");
-    document.getElementById("rotate-svg-3-section-8").classList.toggle("rotate-90");
-    document.getElementById("hidden-3").classList.toggle("hidden");
-});
-document.getElementById("section-8-dropdown-4").addEventListener("click", function () {
-    document.getElementById("section-8-dropdown-4").classList.toggle("h-[76px]");
-    document.getElementById("section-8-dropdown-4").classList.toggle("bg-[#003459]");
-    document.getElementById("section-8-dropdown-4").classList.toggle("text-white");
-    document.getElementById("rotate-svg-4-section-8").classList.toggle("color-1");
-    document.getElementById("rotate-svg-4-section-8").classList.toggle("rotate-90");
-    document.getElementById("hidden-4").classList.toggle("hidden");
-});
+
+
+
 
